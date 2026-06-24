@@ -195,11 +195,19 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .hero__kicker .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--neon); box-shadow: 0 0 12px var(--neon); }
 
 /* rotating versículo */
-.verse { min-height: clamp(180px, 28vw, 330px); }
-.verse__ref { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 20px; transition: opacity 0.4s var(--ease), transform 0.4s var(--ease); }
+.verse { min-height: clamp(150px, 23vw, 250px); }
+.verse__ref { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 18px; transition: opacity 0.4s var(--ease), transform 0.4s var(--ease); }
 .verse__ref svg { width: 16px; height: 16px; stroke: var(--neon); flex-shrink: 0; }
 .verse__ref span { font-family: var(--font-mono); font-size: clamp(11px,1.4vw,13px); font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--neon); }
-.verse__text { transition: opacity 0.4s var(--ease), transform 0.4s var(--ease); }
+/* escala propia: frases completas piden un tamaño mas contenido que el display */
+.verse__text {
+  font-size: clamp(33px, 5.2vw, 62px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.032em;
+  text-wrap: balance;
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
+}
 .verse__text .line2 { color: var(--lilac); }
 .verse.is-out .verse__ref, .verse.is-out .verse__text { opacity: 0; transform: translateY(14px); }
 .verse__dots { display: flex; gap: 9px; margin-top: 26px; }
@@ -397,7 +405,7 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
    ================================================================= */
 .about-hero { background: var(--navy); padding-top: clamp(140px, 20vw, 210px); padding-bottom: clamp(60px, 9vw, 110px); }
 .about-hero .kicker { display: block; margin-bottom: 24px; }
-.about-hero h1 { max-width: 16ch; }
+.about-hero h1 { font-size: clamp(34px, 5.6vw, 72px); line-height: 1.04; letter-spacing: -0.03em; max-width: 19ch; text-wrap: balance; }
 .about-hero h1 em { font-style: normal; color: var(--neon); }
 
 .lede { background: var(--paper); color: var(--navy); }
