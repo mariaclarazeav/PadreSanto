@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Páginas privadas (no indexar)
+Disallow: /privacidad.html
+
+Sitemap: https://aipadresanto.com/sitemap.xml
