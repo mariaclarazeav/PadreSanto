@@ -327,7 +327,7 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
     radial-gradient(60% 55% at 72% 92%, rgba(124,77,255,0.30), transparent 66%),
     radial-gradient(50% 50% at 24% 88%, rgba(112,72,232,0.24), transparent 64%),
     radial-gradient(38% 36% at 50% 50%, rgba(217,241,3,0.05), transparent 60%);
-  filter: blur(8px);
+  filter: blur(28px);
 }
 
 /* slot del "Dios parchado" — aparece al soltar assets/padre-santo.png */
@@ -382,8 +382,8 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
   -webkit-mask-image: linear-gradient(180deg, #000 56%, transparent 96%);
           mask-image: linear-gradient(180deg, #000 56%, transparent 96%);
 }
-/* la imagen conserva su proporción natural 2.5:1, difuminada para integrarse */
-.sacr-bg-img { height: auto; display: block; filter: blur(7px) saturate(1.05); transform: scale(1.08); transform-origin: top right; }
+/* la imagen conserva su proporción natural 2.5:1, nítida y visible */
+.sacr-bg-img { height: auto; display: block; }
 /* velo: oscurece la izquierda para legibilidad, deja ver al Dios a la derecha */
 .sacr-bg-veil {
   aspect-ratio: 1983 / 793;
