@@ -155,6 +155,18 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .sparkle--lilac { color: var(--lilac); }
 @keyframes twinkle { 0%,100% { opacity: 0; transform: scale(0.6); } 50% { opacity: 0.85; transform: scale(1); } }
 
+/* anillos, puntos y estrellas decorativas (para texturizar secciones) */
+.deco-ring { border-radius: 50%; border: 1.5px solid rgba(13,13,85,0.13); }
+.deco-ring--dashed { border-style: dashed; border-color: rgba(13,13,85,0.2); }
+.deco-ring--pink { border-color: rgba(255,153,220,0.55); }
+.deco-ring--neon { border-color: rgba(217,241,3,0.5); }
+.deco-dot { border-radius: 50%; background: currentColor; opacity: 0.5; }
+.deco-star {
+  aspect-ratio: 1; background: currentColor;
+  clip-path: polygon(50% 0, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0 50%, 42% 42%);
+  animation: twinkle 5s ease-in-out infinite;
+}
+
 /* =================================================================
    NAVBAR
    ================================================================= */
