@@ -330,16 +330,15 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
   filter: blur(10px);
 }
 
-/* slot del "Dios parchado" — figura completa (ambos brazos), tenue y fundida */
+/* slot del "Dios parchado" — banda 2.5:1 arriba a la derecha, enfocada al Dios,
+   sin bordes duros (máscara radial), fundida con la nebulosa y opacidad baja */
 .sacr-deity {
-  position: absolute; top: 0; right: 0; bottom: 0; z-index: 0; pointer-events: none;
-  width: min(1040px, 88vw);
-  background-image: url('assets/padre-santo.png');
-  background-repeat: no-repeat; background-position: center; background-size: contain;
-  opacity: 0.5;
-  -webkit-mask-image: linear-gradient(to left, #000 84%, transparent), linear-gradient(to bottom, #000 86%, transparent);
-          mask-image: linear-gradient(to left, #000 84%, transparent), linear-gradient(to bottom, #000 86%, transparent);
-  -webkit-mask-composite: source-in; mask-composite: intersect;
+  position: absolute; top: 0; right: 0; z-index: 0; pointer-events: none;
+  width: min(1120px, 86vw); aspect-ratio: 1983 / 793;
+  background: url('assets/padre-santo.png') no-repeat right top / cover;
+  opacity: 0.42;
+  -webkit-mask-image: radial-gradient(130% 130% at 82% 34%, #000 32%, transparent 78%);
+          mask-image: radial-gradient(130% 130% at 82% 34%, #000 32%, transparent 78%);
 }
 
 .sacr-list { display: flex; flex-direction: column; gap: 14px; max-width: 1000px; margin: clamp(40px,6vw,64px) auto 0; position: relative; z-index: 1; }
