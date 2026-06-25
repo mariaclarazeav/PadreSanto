@@ -11,7 +11,7 @@
      Pega aquí la URL del despliegue de tu Google Apps Script (termina en /exec).
      Mientras esté vacío, el formulario solo muestra la confirmación.
      Pasos para obtenerla: ver README-sheets.md */
-  var SHEET_ENDPOINT = '';
+  var SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbys8HXY1Ju9BnfL6PHBzgpyCR7MvGRYXpGEwdbkmpIcnJchSsDSfLiOv0J-X6GuApm-/exec';
 
   // Mensaje por contexto (clave en data-wa). Sin emojis, voz de marca.
   var WA_MSG = {
