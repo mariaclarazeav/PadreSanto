@@ -334,7 +334,7 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
    sin bordes duros (máscara radial), fundida con la nebulosa y opacidad baja */
 .sacr-deity {
   position: absolute; top: 0; right: 0; z-index: 0; pointer-events: none;
-  width: min(1120px, 86vw); aspect-ratio: 1983 / 793;
+  width: min(1320px, 96vw); aspect-ratio: 1983 / 793;
   background: url('assets/padre-santo.png') no-repeat right top / cover;
   opacity: 0.42;
   -webkit-mask-image: radial-gradient(130% 130% at 82% 34%, #000 32%, transparent 78%);
