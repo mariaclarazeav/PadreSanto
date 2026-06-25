@@ -376,8 +376,8 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .sacr-bg::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(90deg, rgba(8,8,54,0.94) 0%, rgba(8,8,54,0.8) 46%, rgba(8,8,54,0.55) 100%),
-    linear-gradient(180deg, var(--navy-deep) 2%, transparent 22%, transparent 78%, var(--navy-deep) 100%);
+    linear-gradient(90deg, rgba(8,8,54,0.72) 0%, rgba(8,8,54,0.42) 45%, rgba(8,8,54,0.18) 100%),
+    linear-gradient(180deg, var(--navy-deep) 0%, transparent 15%, transparent 82%, var(--navy-deep) 100%);
 }
 
 /* banner grande con la imagen del Dios + título superpuesto */
