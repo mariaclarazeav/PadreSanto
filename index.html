@@ -194,7 +194,47 @@
       <p class="sacr-intro-phrase">Menos fe. Más atribución.</p>
     </div>
 
-    <div class="sacr-list reveal">
+    <!-- Cuadros: navegador horizontal hacia el acordeón -->
+    <div class="sacr-cards reveal" role="tablist" aria-label="Elige un sacramento">
+      <button class="sacr-card" data-sacr="0" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></span>
+        <span class="sacr-card__n">01</span>
+        <span class="sacr-card__name">El Confesionario</span>
+        <span class="sacr-card__cat">Diagnóstico</span>
+      </button>
+      <button class="sacr-card" data-sacr="1" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12l-4-4M22 12l-4 4M22 12H8"/><path d="M14 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/></svg></span>
+        <span class="sacr-card__n">02</span>
+        <span class="sacr-card__name">El Libro de los Vivos</span>
+        <span class="sacr-card__cat">Leads</span>
+      </button>
+      <button class="sacr-card" data-sacr="2" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+        <span class="sacr-card__n">03</span>
+        <span class="sacr-card__name">El Evangelio</span>
+        <span class="sacr-card__cat">Contenido</span>
+      </button>
+      <button class="sacr-card" data-sacr="3" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.33L3 21l1.17-3.5A8.38 8.38 0 1 1 21 11.5Z"/></svg></span>
+        <span class="sacr-card__n">04</span>
+        <span class="sacr-card__name">El Oráculo</span>
+        <span class="sacr-card__cat">Conversación</span>
+      </button>
+      <button class="sacr-card" data-sacr="4" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="13" y="7" width="3" height="10"/></svg></span>
+        <span class="sacr-card__n">05</span>
+        <span class="sacr-card__name">La Revelación</span>
+        <span class="sacr-card__cat">Analytics</span>
+      </button>
+      <button class="sacr-card" data-sacr="5" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+        <span class="sacr-card__n">06</span>
+        <span class="sacr-card__name">La Omnisciencia</span>
+        <span class="sacr-card__cat">Inteligencia</span>
+      </button>
+    </div>
+
+    <div class="sacr-list reveal" id="sacrList">
 
       <!-- 01 -->
       <article class="sacr open">

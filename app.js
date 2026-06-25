@@ -214,17 +214,38 @@
       }
     };
 
-    sacrItems.forEach(function (item) {
+    var cards = document.querySelectorAll('.sacr-card');
+    var setActiveCard = function (idx) {
+      cards.forEach(function (c, i) { c.classList.toggle('active', i === idx); c.setAttribute('aria-selected', i === idx); });
+    };
+
+    var openOnly = function (idx) {
+      sacrItems.forEach(function (other, j) { setPanel(other, j === idx); });
+      setActiveCard(idx);
+    };
+
+    sacrItems.forEach(function (item, i) {
       var head = item.querySelector('.sacr__head');
       head.addEventListener('click', function () {
         var isOpen = item.classList.contains('open');
         sacrItems.forEach(function (other) { if (other !== item) setPanel(other, false); });
         setPanel(item, !isOpen);
+        setActiveCard(isOpen ? -1 : i);
+      });
+    });
+
+    // cuadros: abren el módulo y llevan al acordeón
+    cards.forEach(function (card, i) {
+      card.addEventListener('click', function () {
+        openOnly(i);
+        var y = sacrItems[i].getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       });
     });
 
     // abre el primero por defecto
     setPanel(sacrItems[0], true);
+    setActiveCard(0);
 
     // recalcula la altura del panel abierto al cambiar el tamaño de la ventana
     var resizeT;
