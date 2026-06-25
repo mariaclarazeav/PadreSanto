@@ -7,6 +7,12 @@
   var WA_NUMBER = '573233403286';
   var EMAIL = 'info@aipadresanto.com';
 
+  /* ---- Registro del formulario en Google Sheets ----
+     Pega aquí la URL del despliegue de tu Google Apps Script (termina en /exec).
+     Mientras esté vacío, el formulario solo muestra la confirmación.
+     Pasos para obtenerla: ver README-sheets.md */
+  var SHEET_ENDPOINT = '';
+
   // Mensaje por contexto (clave en data-wa). Sin emojis, voz de marca.
   var WA_MSG = {
     'default':   'Hola Padre Santo. Quiero pedir mi intervención DivinAI para mi equipo de marketing.',
@@ -117,17 +123,25 @@
     });
     if (!ok) return;
 
-    // Construye el mensaje de WhatsApp con los datos capturados y lo abre.
     var name = (document.getElementById('f-name') || {}).value || '';
     var email = (document.getElementById('f-email') || {}).value || '';
     var company = (document.getElementById('f-company') || {}).value || '';
     var whats = (document.getElementById('f-whats') || {}).value || '';
-    var msg = 'Hola Padre Santo, quiero pedir mi intervención DivinAI.\n\n' +
-      'Nombre: ' + name + '\n' +
-      'Email: ' + email + '\n' +
-      'Empresa: ' + company +
-      (whats ? '\nWhatsApp: ' + whats : '');
-    window.open(waLink('default', msg), '_blank', 'noopener');
+
+    // 1) Registra el lead en Google Sheets (si el endpoint está configurado).
+    if (SHEET_ENDPOINT) {
+      var payload = new URLSearchParams({
+        nombre: name, email: email, empresa: company, whatsapp: whats,
+        origen: location.pathname, fecha: new Date().toISOString()
+      });
+      fetch(SHEET_ENDPOINT, { method: 'POST', mode: 'no-cors', body: payload }).catch(function () {});
+    } else {
+      // 2) Sin endpoint aún: abre WhatsApp con los datos como respaldo.
+      var msg = 'Hola Padre Santo, quiero pedir mi intervención DivinAI.\n\n' +
+        'Nombre: ' + name + '\nEmail: ' + email + '\nEmpresa: ' + company +
+        (whats ? '\nWhatsApp: ' + whats : '');
+      window.open(waLink('default', msg), '_blank', 'noopener');
+    }
 
     if (formView) formView.hidden = true;
     if (successView) successView.hidden = false;
