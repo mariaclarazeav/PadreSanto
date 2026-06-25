@@ -174,40 +174,261 @@
   </div>
 </section>
 
-<!-- ================= MÓDULOS ================= -->
-<section class="modulos section-pad" id="modulos">
-  <div class="deco" aria-hidden="true"><div class="deco-dots" style="--x:20%"></div></div>
+<!-- ================= SACRAMENTOS (interactivo) ================= -->
+<section class="sacramentos section-pad" id="modulos">
+  <div class="deco" aria-hidden="true">
+    <div class="deco-nebula"></div>
+    <div class="halo-bg" style="width:min(680px,80vw); top:8%; left:50%; transform:translateX(-50%); opacity:.1; --spin:130s;"></div>
+    <span class="sparkle" style="top:12%; left:12%; font-size:16px">+</span>
+    <span class="sparkle sparkle--pink" style="top:20%; right:14%; font-size:13px; animation-delay:1.2s">+</span>
+    <span class="sparkle sparkle--lilac" style="bottom:30%; left:8%; font-size:12px; animation-delay:2s">+</span>
+  </div>
+  <div class="sacr-deity" aria-hidden="true"></div>
+
   <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="kicker kicker--ink">Los 6 sacramentos del marketing</span>
-      <h2>Seis módulos. Una sola fe<br>en los datos.</h2>
-      <p class="muted-ink">Empieza con lo que necesitas hoy. Suma el resto cuando el pipeline lo pida.</p>
+    <div class="sec-head sec-head--center reveal">
+      <span class="kicker kicker--neon">Los 6 sacramentos del marketing</span>
+      <h2>No son herramientas.<br>Son <span class="text-neon">intervenciones</span>.</h2>
+      <p class="muted">Hay empresas que necesitan más leads. Otras, más orden. Otras necesitan dejar de operar con hojas de cálculo, intuición y buena voluntad. Padre Santo identifica qué está roto y aplica la intervención correcta.</p>
+      <p class="muted" style="margin-top:14px">Cada sacramento puede funcionar por separado. Juntos forman un sistema capaz de automatizar, conectar y optimizar todo tu ecosistema de marketing.</p>
+      <p class="sacr-intro-phrase">Menos fe. Más atribución.</p>
     </div>
-    <div class="mod-grid">
-      <article class="mod-card reveal" data-delay="1">
-        <div class="mod-card__top"><div class="mod-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></div><span class="mod-n">01</span></div>
-        <h3>Diagnóstico IA</h3><p>El evangelio según tu embudo. Sabemos qué está roto antes de que lo sepas tú.</p>
+
+    <div class="sacr-list reveal">
+
+      <!-- 01 -->
+      <article class="sacr open">
+        <button class="sacr__head" aria-expanded="true" aria-controls="sacr-1">
+          <span class="sacr__num">01</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 01 · Diagnóstico</span>
+            <span class="sacr__name">El Confesionario</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-1">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Cuéntanos todo. La IA no juzga. Solo analiza.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Antes de arreglar un problema, hay que encontrarlo. La mayoría de los equipos sabe que algo no está funcionando: campañas inconsistentes, leads que desaparecen, un CRM que no refleja la realidad, reportes que generan más preguntas que respuestas. Pero saber que algo está mal no es lo mismo que saber exactamente qué está fallando.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Un diagnóstico inteligente que analiza tu operación de marketing y ventas para identificar cuellos de botella, oportunidades perdidas y áreas de mejora. No entrega un reporte genérico: entrega un mapa claro de lo que funciona, lo que está roto y lo que deberías priorizar primero.</p>
+                <ul class="sacr__does">
+                  <li>Evalúa la madurez de tu operación de marketing</li>
+                  <li>Analiza canales, campañas y procesos</li>
+                  <li>Identifica fugas en el embudo de conversión</li>
+                  <li>Detecta oportunidades de optimización</li>
+                  <li>Genera un plan de acción priorizado</li>
+                  <li>Produce un reporte ejecutivo listo para compartir</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">El primer paso para la resurrección es admitir que algo murió.</p>
+          </div>
+        </div>
       </article>
-      <article class="mod-card reveal" data-delay="2">
-        <div class="mod-card__top"><div class="mod-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12l-4-4M22 12l-4 4M22 12H8"/><path d="M14 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/></svg></div><span class="mod-n">02</span></div>
-        <h3>Lead Engine</h3><p>Ningún lead más en el limbo. Todos capturados, todos trazados, todos calificados.</p>
+
+      <!-- 02 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-2">
+          <span class="sacr__num">02</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12l-4-4M22 12l-4 4M22 12H8"/><path d="M14 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 02 · Leads</span>
+            <span class="sacr__name">El Libro de los Vivos</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-2">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Porque ningún lead merece desaparecer sin dejar rastro.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Los leads no suelen perderse por falta de interés. Se pierden porque viven en demasiados lugares al mismo tiempo: Instagram, WhatsApp, formularios, LinkedIn, CRM, correos. Todo genera información. Pocas empresas logran conectarla.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Centraliza cada contacto, cada interacción y cada señal de intención para construir una trazabilidad completa del recorrido de cada prospecto. La IA identifica quién está listo para comprar, quién necesita seguimiento y quién aún necesita más tiempo. Tu equipo deja de perseguir contactos y empieza a priorizar oportunidades.</p>
+                <ul class="sacr__does">
+                  <li>Captura leads desde múltiples canales</li>
+                  <li>Consolida la información en un solo lugar</li>
+                  <li>Asigna puntuaciones automáticas de intención</li>
+                  <li>Automatiza procesos de nutrición</li>
+                  <li>Detecta oportunidades de venta</li>
+                  <li>Envía alertas de leads calientes</li>
+                  <li>Integra la información con tu CRM</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Que la trazabilidad sea contigo.</p>
+          </div>
+        </div>
       </article>
-      <article class="mod-card reveal" data-delay="3">
-        <div class="mod-card__top"><div class="mod-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div><span class="mod-n">03</span></div>
-        <h3>Content Engine</h3><p>Contenido que suena a ti, publicado sin que tengas que acordarte.</p>
+
+      <!-- 03 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-3">
+          <span class="sacr__num">03</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 03 · Contenido</span>
+            <span class="sacr__name">El Evangelio</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-3">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Tu mensaje. Tu voz. Sin depender de la inspiración del lunes.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>La mayoría de las marcas no tiene un problema de creatividad. Tiene un problema de consistencia. Publican cuando tienen tiempo, desaparecen cuando están ocupadas, y luego se preguntan por qué nadie las recuerda.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Aprende la voz, el tono y la estrategia de tu marca para generar contenido alineado con tus objetivos comerciales. No produce contenido genérico: produce contenido que suena a tu empresa. Y además lo distribuye, mide y optimiza para que cada publicación contribuya al crecimiento.</p>
+                <ul class="sacr__does">
+                  <li>Genera contenido alineado con la voz de la marca</li>
+                  <li>Construye calendarios editoriales automatizados</li>
+                  <li>Programa publicaciones multicanal</li>
+                  <li>Optimiza mensajes mediante IA</li>
+                  <li>Personaliza contenido por audiencia</li>
+                  <li>Analiza el rendimiento de cada pieza</li>
+                  <li>Aprende y mejora continuamente</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">El algoritmo no castiga la falta de talento. Castiga la inconsistencia.</p>
+          </div>
+        </div>
       </article>
-      <article class="mod-card reveal" data-delay="1">
-        <div class="mod-card__top"><div class="mod-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.33L3 21l1.17-3.5A8.38 8.38 0 1 1 21 11.5Z"/></svg></div><span class="mod-n">04</span></div>
-        <h3>Conversational</h3><p>Responde a las 3am. Sin contratar a nadie. Califica mientras tú duermes.</p>
+
+      <!-- 04 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-4">
+          <span class="sacr__num">04</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.33L3 21l1.17-3.5A8.38 8.38 0 1 1 21 11.5Z"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 04 · Conversación</span>
+            <span class="sacr__name">El Oráculo</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-4">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Tu equipo duerme. Tus leads no esperan.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Cada minuto sin respuesta es una oportunidad para que alguien más responda primero. Y mientras tu equipo descansa, el prospecto sigue buscando — normalmente, a quien conteste antes.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Automatiza conversaciones en WhatsApp, chat y otros canales para responder, calificar y acompañar prospectos en tiempo real. Entiende el contexto, reconoce intención de compra y sabe cuándo involucrar a una persona. No reemplaza a tu equipo: lo prepara para tener mejores conversaciones.</p>
+                <ul class="sacr__does">
+                  <li>Responde automáticamente 24/7</li>
+                  <li>Califica prospectos en tiempo real</li>
+                  <li>Detecta intención de compra</li>
+                  <li>Automatiza conversaciones en WhatsApp</li>
+                  <li>Conserva el contexto entre interacciones</li>
+                  <li>Escala a humanos cuando corresponde</li>
+                  <li>Identifica oportunidades de upsell y cross-sell</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Que el pipeline te acompañe. A toda hora.</p>
+          </div>
+        </div>
       </article>
-      <article class="mod-card reveal" data-delay="2">
-        <div class="mod-card__top"><div class="mod-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="13" y="7" width="3" height="10"/></svg></div><span class="mod-n">05</span></div>
-        <h3>Analytics</h3><p>Menos dashboards que nadie lee. Más alertas que alguien actúa.</p>
+
+      <!-- 05 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-5">
+          <span class="sacr__num">05</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="13" y="7" width="3" height="10"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 05 · Analytics</span>
+            <span class="sacr__name">La Revelación</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-5">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Los datos siempre supieron la verdad. El problema era que nadie los escuchaba.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>La información existe, pero suele estar distribuida entre plataformas, reportes y herramientas que nunca hablan entre sí. Cuando los datos viven separados, las decisiones terminan dependiendo de la intuición.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Unifica toda la información relevante del negocio en un solo lugar y la transforma en decisiones accionables. Sin perseguir reportes. Sin esperar al cierre del mes. Sin actuar demasiado tarde.</p>
+                <ul class="sacr__does">
+                  <li>Consolida datos de todos los canales</li>
+                  <li>Construye dashboards en tiempo real</li>
+                  <li>Calcula atribución multicanal</li>
+                  <li>Detecta anomalías automáticamente</li>
+                  <li>Proyecta resultados futuros mediante IA</li>
+                  <li>Genera reportes ejecutivos automáticos</li>
+                  <li>Mide ROI por canal, campaña y periodo</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Paz para los dashboards. Gloria para las conversiones.</p>
+          </div>
+        </div>
       </article>
-      <article class="mod-card reveal" data-delay="3">
-        <div class="mod-card__top"><div class="mod-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><span class="mod-n">06</span></div>
-        <h3>Intel Competitiva</h3><p>Saber qué hacen tus competidores antes de que ellos lo sepan.</p>
+
+      <!-- 06 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-6">
+          <span class="sacr__num">06</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 06 · Inteligencia</span>
+            <span class="sacr__name">La Omnisciencia</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-6">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Porque el mercado no espera a que revises la competencia.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Tus competidores cambian mensajes, lanzan campañas, ajustan precios y prueban nuevas estrategias. Y la mayoría de las empresas se entera cuando ya es demasiado tarde.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Monitorea continuamente el mercado para identificar movimientos relevantes y oportunidades que podrían afectar tu crecimiento. No para copiar. Para decidir mejor.</p>
+                <ul class="sacr__does">
+                  <li>Monitorea competidores automáticamente</li>
+                  <li>Analiza campañas y posicionamiento</li>
+                  <li>Detecta cambios relevantes del mercado</li>
+                  <li>Genera alertas estratégicas</li>
+                  <li>Identifica oportunidades emergentes</li>
+                  <li>Produce reportes periódicos automatizados</li>
+                  <li>Realiza benchmarking de industria</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Algunos lo llaman ventaja competitiva. Nosotros lo llamamos Omnisciencia.</p>
+          </div>
+        </div>
       </article>
+
+    </div>
+
+    <div class="sacr-cta reveal">
+      <h3>¿Necesitas los seis sacramentos?</h3>
+      <p>Probablemente no. La intervención comienza donde está el problema. Y crece a medida que crece tu negocio.</p>
+      <button class="btn btn--neon" data-modal>Solicita tu diagnóstico →</button>
     </div>
   </div>
 </section>

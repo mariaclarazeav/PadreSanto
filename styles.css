@@ -293,7 +293,72 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .mock-stats div .ms-lbl { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--lilac); margin-top: 2px; }
 
 /* =================================================================
-   MÓDULOS
+   SACRAMENTOS — acordeón interactivo sobre nebulosa
+   ================================================================= */
+.sacramentos { background: var(--navy-deep); color: var(--white); }
+.sec-head--center { max-width: 760px; margin-inline: auto; text-align: center; }
+.sec-head--center .kicker { margin-bottom: 18px; }
+.sacr-intro-phrase { font-family: var(--font-mono); color: var(--neon); font-size: clamp(15px,2.2vw,19px); margin-top: 24px; letter-spacing: 0.02em; }
+
+/* nebulosa de fondo */
+.deco-nebula {
+  inset: 0;
+  background:
+    radial-gradient(46% 42% at 18% 22%, rgba(210,153,255,0.30), transparent 62%),
+    radial-gradient(40% 40% at 84% 26%, rgba(255,153,220,0.22), transparent 62%),
+    radial-gradient(60% 55% at 72% 92%, rgba(124,77,255,0.30), transparent 66%),
+    radial-gradient(50% 50% at 24% 88%, rgba(112,72,232,0.24), transparent 64%),
+    radial-gradient(38% 36% at 50% 50%, rgba(217,241,3,0.05), transparent 60%);
+  filter: blur(8px);
+}
+
+/* slot del "Dios parchado" — aparece al soltar assets/padre-santo.png */
+.sacr-deity {
+  position: absolute; top: 0; right: 0; z-index: 0; pointer-events: none;
+  width: clamp(360px, 42vw, 680px); height: 100%;
+  background-image: url('assets/padre-santo.png');
+  background-repeat: no-repeat; background-position: top right; background-size: contain;
+  opacity: 0.9;
+  -webkit-mask-image: linear-gradient(to left, #000 55%, transparent), linear-gradient(to bottom, #000 70%, transparent);
+          mask-image: linear-gradient(to left, #000 55%, transparent), linear-gradient(to bottom, #000 70%, transparent);
+  -webkit-mask-composite: source-in; mask-composite: intersect;
+}
+
+.sacr-list { display: flex; flex-direction: column; gap: 14px; max-width: 1000px; margin: clamp(40px,6vw,64px) auto 0; position: relative; z-index: 1; }
+.sacr { border: 1px solid rgba(210,199,255,0.18); border-radius: var(--r-lg); background: rgba(13,13,85,0.45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); overflow: hidden; transition: border-color 0.3s, background 0.3s; }
+.sacr:hover { border-color: rgba(210,199,255,0.4); }
+.sacr.open { border-color: var(--neon); background: rgba(13,13,85,0.72); }
+.sacr__head { width: 100%; display: flex; align-items: center; gap: clamp(16px,2.5vw,26px); padding: clamp(20px,3vw,28px); text-align: left; }
+.sacr__num { font-family: var(--font-mono); font-weight: 700; font-size: clamp(26px,4.5vw,44px); line-height: 1; color: rgba(210,199,255,0.4); transition: color 0.3s; flex-shrink: 0; }
+.sacr.open .sacr__num { color: var(--neon); }
+.sacr__icon { width: 46px; height: 46px; border-radius: 12px; background: rgba(210,199,255,0.08); display: grid; place-items: center; color: var(--lilac); flex-shrink: 0; transition: background 0.3s, color 0.3s; }
+.sacr.open .sacr__icon { background: var(--neon); color: var(--navy); }
+.sacr__titles { flex: 1; min-width: 0; }
+.sacr__cat { display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--lilac); margin-bottom: 6px; }
+.sacr__name { font-size: clamp(20px,3vw,30px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; }
+.sacr__toggle { width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(210,199,255,0.3); display: grid; place-items: center; color: var(--lilac); flex-shrink: 0; transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.3s var(--ease); }
+.sacr__toggle svg { width: 20px; height: 20px; }
+.sacr.open .sacr__toggle { background: var(--neon); color: var(--navy); border-color: var(--neon); transform: rotate(135deg); }
+
+.sacr__panel { max-height: 0; overflow: hidden; transition: max-height 0.45s var(--ease); }
+.sacr__panel-inner { padding: 0 clamp(20px,3vw,28px) clamp(26px,3.5vw,34px); }
+.sacr__tag { font-family: var(--font-mono); color: var(--neon); font-size: clamp(13px,1.7vw,15px); line-height: 1.5; margin-bottom: 26px; }
+.sacr__cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px,4vw,40px); }
+.sacr__block h4 { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; }
+.sacr__block--problem h4 { color: var(--pink); }
+.sacr__block--solution h4 { color: var(--neon); }
+.sacr__block p { color: rgba(210,199,255,0.82); font-size: 15.5px; line-height: 1.62; }
+.sacr__does { margin-top: 18px; display: flex; flex-direction: column; gap: 10px; }
+.sacr__does li { position: relative; padding-left: 26px; font-size: 14.5px; line-height: 1.45; color: rgba(255,255,255,0.9); }
+.sacr__does li::before { content: ""; position: absolute; left: 2px; top: 7px; width: 11px; height: 7px; border-left: 2px solid var(--neon); border-bottom: 2px solid var(--neon); transform: rotate(-45deg); }
+.sacr__phrase { margin-top: 28px; padding-top: 22px; border-top: 1px solid rgba(210,199,255,0.14); font-family: var(--font-mono); color: var(--neon); font-size: clamp(15px,2vw,18px); line-height: 1.5; }
+
+.sacr-cta { text-align: center; max-width: 620px; margin: clamp(48px,7vw,72px) auto 0; position: relative; z-index: 1; }
+.sacr-cta h3 { font-size: clamp(24px,3.4vw,34px); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 14px; }
+.sacr-cta p { color: var(--lilac); font-size: clamp(16px,2vw,18px); margin-bottom: 28px; }
+
+/* =================================================================
+   MÓDULOS (legado — grid de cards, conservado por si se reutiliza)
    ================================================================= */
 .modulos { background: var(--paper); color: var(--navy); }
 .mod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -487,6 +552,8 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
   .sol-grid { grid-template-columns: 1fr; }
   .sol-visual { order: -1; }
   .pq-grid { grid-template-columns: 1fr; }
+  .sacr__cols { grid-template-columns: 1fr; }
+  .sacr-deity { display: none; }
   .lede__grid { grid-template-columns: 1fr; gap: 24px; }
   .founders__grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; gap: 36px; }
@@ -503,4 +570,6 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
   .proceso__foot { flex-direction: column; align-items: flex-start; }
   .footer__top { grid-template-columns: 1fr; }
   .founder-card { padding: 28px 24px; }
+  .sacr__icon { display: none; }
+  .sacr__head { gap: 16px; }
 }

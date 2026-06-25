@@ -196,6 +196,48 @@
   }
 
   /* =============================================================
+     SACRAMENTOS — acordeón (uno abierto a la vez)
+     ============================================================= */
+  var sacrItems = document.querySelectorAll('.sacr');
+  if (sacrItems.length) {
+    var setPanel = function (item, open) {
+      var panel = item.querySelector('.sacr__panel');
+      var head = item.querySelector('.sacr__head');
+      if (open) {
+        item.classList.add('open');
+        head.setAttribute('aria-expanded', 'true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      } else {
+        item.classList.remove('open');
+        head.setAttribute('aria-expanded', 'false');
+        panel.style.maxHeight = null;
+      }
+    };
+
+    sacrItems.forEach(function (item) {
+      var head = item.querySelector('.sacr__head');
+      head.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        sacrItems.forEach(function (other) { if (other !== item) setPanel(other, false); });
+        setPanel(item, !isOpen);
+      });
+    });
+
+    // abre el primero por defecto
+    setPanel(sacrItems[0], true);
+
+    // recalcula la altura del panel abierto al cambiar el tamaño de la ventana
+    var resizeT;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeT);
+      resizeT = setTimeout(function () {
+        var openItem = document.querySelector('.sacr.open');
+        if (openItem) { var p = openItem.querySelector('.sacr__panel'); p.style.maxHeight = p.scrollHeight + 'px'; }
+      }, 150);
+    });
+  }
+
+  /* =============================================================
      SCROLL reveal
      ============================================================= */
   var reveals = document.querySelectorAll('.reveal');
