@@ -166,6 +166,8 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
   clip-path: polygon(50% 0, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0 50%, 42% 42%);
   animation: twinkle 5s ease-in-out infinite;
 }
+/* campo de estrellas/cruces como textura de fondo (imagen) */
+.deco-stars { inset: 0; background: url('assets/fondo-estrella.png') no-repeat center center; background-size: cover; opacity: 0.85; }
 
 /* =================================================================
    NAVBAR
