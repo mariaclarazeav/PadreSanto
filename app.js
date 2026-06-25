@@ -243,9 +243,20 @@
       });
     });
 
-    // abre el primero por defecto
-    setPanel(sacrItems[0], true);
-    setActiveCard(0);
+    // abre el módulo del hash (#sacr-N) o el primero por defecto
+    var startIdx = 0;
+    var hashMatch = (location.hash || '').match(/^#sacr-(\d+)$/);
+    if (hashMatch) {
+      var hi = parseInt(hashMatch[1], 10) - 1;
+      if (hi >= 0 && hi < sacrItems.length) startIdx = hi;
+    }
+    openOnly(startIdx);
+    if (hashMatch) {
+      setTimeout(function () {
+        var y = sacrItems[startIdx].getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }, 220);
+    }
 
     // recalcula la altura del panel abierto al cambiar el tamaño de la ventana
     var resizeT;

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los 6 sacramentos · Módulos de Padre Santo</title>
+<meta name="description" content="Los 6 módulos de Padre Santo: Diagnóstico, Leads, Contenido, Conversación, Analytics e Inteligencia. No son herramientas, son intervenciones. Mira el problema que resuelve cada uno y cómo lo hace.">
+<meta name="theme-color" content="#0D0D55">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='12' fill='none' stroke='%23D9F103' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html#top" class="logo" aria-label="Padre Santo — inicio">
+      <svg class="halo-spin" width="34" height="34" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <g class="halo-rays" stroke="#D9F103" stroke-width="0.85" stroke-linecap="round">
+          <line x1="24.0" y1="9.5" x2="24.0" y2="1.5"/><line x1="26.5" y1="9.7" x2="27.9" y2="1.8"/><line x1="29.0" y1="10.4" x2="31.7" y2="2.9"/><line x1="31.2" y1="11.4" x2="35.2" y2="4.5"/>
+          <line x1="33.3" y1="12.9" x2="38.5" y2="6.8"/><line x1="35.1" y1="14.7" x2="41.2" y2="9.5"/><line x1="36.6" y1="16.8" x2="43.5" y2="12.7"/><line x1="37.6" y1="19.0" x2="45.1" y2="16.3"/>
+          <line x1="38.3" y1="21.5" x2="46.2" y2="20.1"/><line x1="38.5" y1="24.0" x2="46.5" y2="24.0"/><line x1="38.3" y1="26.5" x2="46.2" y2="27.9"/><line x1="37.6" y1="29.0" x2="45.1" y2="31.7"/>
+          <line x1="36.6" y1="31.2" x2="43.5" y2="35.2"/><line x1="35.1" y1="33.3" x2="41.2" y2="38.5"/><line x1="33.3" y1="35.1" x2="38.5" y2="41.2"/><line x1="31.2" y1="36.6" x2="35.2" y2="43.5"/>
+          <line x1="29.0" y1="37.6" x2="31.7" y2="45.1"/><line x1="26.5" y1="38.3" x2="27.9" y2="46.2"/><line x1="24.0" y1="38.5" x2="24.0" y2="46.5"/><line x1="21.5" y1="38.3" x2="20.1" y2="46.2"/>
+          <line x1="19.0" y1="37.6" x2="16.3" y2="45.1"/><line x1="16.8" y1="36.6" x2="12.7" y2="43.5"/><line x1="14.7" y1="35.1" x2="9.5" y2="41.2"/><line x1="12.9" y1="33.3" x2="6.8" y2="38.5"/>
+          <line x1="11.4" y1="31.3" x2="4.5" y2="35.3"/><line x1="10.4" y1="29.0" x2="2.9" y2="31.7"/><line x1="9.7" y1="26.5" x2="1.8" y2="27.9"/><line x1="9.5" y1="24.0" x2="1.5" y2="24.0"/>
+          <line x1="9.7" y1="21.5" x2="1.8" y2="20.1"/><line x1="10.4" y1="19.0" x2="2.9" y2="16.3"/><line x1="11.4" y1="16.8" x2="4.5" y2="12.7"/><line x1="12.9" y1="14.7" x2="6.8" y2="9.5"/>
+          <line x1="14.7" y1="12.9" x2="9.5" y2="6.8"/><line x1="16.7" y1="11.4" x2="12.7" y2="4.5"/><line x1="19.0" y1="10.4" x2="16.3" y2="2.9"/><line x1="21.5" y1="9.7" x2="20.1" y2="1.8"/>
+        </g>
+        <circle cx="24" cy="24" r="10.5" fill="none" stroke="#D9F103" stroke-width="2.5"/>
+      </svg>
+      <span>Padre Santo</span>
+    </a>
+    <div class="nav__links">
+      <a href="index.html#solucion">Solución</a>
+      <a href="modulos.html">Módulos</a>
+      <a href="index.html#paraquien">Para quién</a>
+      <a href="nosotros.html">Quiénes somos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+    <div class="nav__cta">
+      <a class="btn btn--neon" data-wa="default">Pedir intervención</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <span class="kicker kicker--neon">Navegación · Padre Santo</span>
+  <a href="index.html#solucion">Solución</a>
+  <a href="modulos.html">Módulos</a>
+  <a href="index.html#paraquien">Para quién</a>
+  <a href="index.html#planes">Planes</a>
+  <a href="nosotros.html">Quiénes somos</a>
+  <a href="index.html#contacto">Contacto</a>
+  <a class="btn btn--neon" data-wa="default">Pedir mi intervención →</a>
+</div>
+
+<span id="top"></span>
+
+<!-- ================= SACRAMENTOS (interactivo, página interna) ================= -->
+<section class="sacramentos section-pad" style="padding-top:clamp(110px,16vw,150px)" id="modulos">
+  <div class="deco" aria-hidden="true">
+    <div class="deco-nebula"></div>
+    <div class="halo-bg" style="width:min(680px,80vw); top:4%; left:50%; transform:translateX(-50%); opacity:.09; --spin:130s;"></div>
+    <span class="sparkle" style="top:10%; left:10%; font-size:16px">+</span>
+    <span class="sparkle sparkle--pink" style="top:16%; right:12%; font-size:13px; animation-delay:1.2s">+</span>
+  </div>
+
+  <div class="wrap">
+    <!-- Banner grande con la imagen del Dios + título -->
+    <div class="mod-banner mod-banner--lg reveal">
+      <img src="assets/padre-santo.png" alt="Padre Santo — intervención DivinAI">
+      <div class="mod-banner__overlay">
+        <span class="kicker kicker--neon">Los 6 sacramentos del marketing</span>
+        <h2>No son herramientas.<br>Son <span class="text-neon">intervenciones</span>.</h2>
+      </div>
+    </div>
+
+    <div class="sec-head sec-head--center reveal">
+      <p class="muted">Hay empresas que necesitan más leads. Otras, más orden. Otras necesitan dejar de operar con hojas de cálculo, intuición y buena voluntad. Padre Santo identifica qué está roto y aplica la intervención correcta. Cada sacramento funciona por separado; juntos, forman un sistema.</p>
+      <p class="sacr-intro-phrase">Menos fe. Más atribución.</p>
+    </div>
+
+    <!-- Cuadros: navegador horizontal hacia el acordeón -->
+    <div class="sacr-cards reveal" role="tablist" aria-label="Elige un sacramento">
+      <button class="sacr-card" data-sacr="0" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></span>
+        <span class="sacr-card__n">01</span>
+        <span class="sacr-card__name">El Confesionario</span>
+        <span class="sacr-card__cat">Diagnóstico</span>
+      </button>
+      <button class="sacr-card" data-sacr="1" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12l-4-4M22 12l-4 4M22 12H8"/><path d="M14 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/></svg></span>
+        <span class="sacr-card__n">02</span>
+        <span class="sacr-card__name">El Libro de los Vivos</span>
+        <span class="sacr-card__cat">Leads</span>
+      </button>
+      <button class="sacr-card" data-sacr="2" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+        <span class="sacr-card__n">03</span>
+        <span class="sacr-card__name">El Evangelio</span>
+        <span class="sacr-card__cat">Contenido</span>
+      </button>
+      <button class="sacr-card" data-sacr="3" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.33L3 21l1.17-3.5A8.38 8.38 0 1 1 21 11.5Z"/></svg></span>
+        <span class="sacr-card__n">04</span>
+        <span class="sacr-card__name">El Oráculo</span>
+        <span class="sacr-card__cat">Conversación</span>
+      </button>
+      <button class="sacr-card" data-sacr="4" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="13" y="7" width="3" height="10"/></svg></span>
+        <span class="sacr-card__n">05</span>
+        <span class="sacr-card__name">La Revelación</span>
+        <span class="sacr-card__cat">Analytics</span>
+      </button>
+      <button class="sacr-card" data-sacr="5" role="tab">
+        <span class="sacr-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+        <span class="sacr-card__n">06</span>
+        <span class="sacr-card__name">La Omnisciencia</span>
+        <span class="sacr-card__cat">Inteligencia</span>
+      </button>
+    </div>
+
+    <div class="sacr-list reveal" id="sacrList">
+
+      <!-- 01 -->
+      <article class="sacr open">
+        <button class="sacr__head" aria-expanded="true" aria-controls="sacr-1">
+          <span class="sacr__num">01</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 01 · Diagnóstico</span>
+            <span class="sacr__name">El Confesionario</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-1">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Cuéntanos todo. La IA no juzga. Solo analiza.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Antes de arreglar un problema, hay que encontrarlo. La mayoría de los equipos sabe que algo no está funcionando: campañas inconsistentes, leads que desaparecen, un CRM que no refleja la realidad, reportes que generan más preguntas que respuestas. Pero saber que algo está mal no es lo mismo que saber exactamente qué está fallando.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Un diagnóstico inteligente que analiza tu operación de marketing y ventas para identificar cuellos de botella, oportunidades perdidas y áreas de mejora. No entrega un reporte genérico: entrega un mapa claro de lo que funciona, lo que está roto y lo que deberías priorizar primero.</p>
+                <ul class="sacr__does">
+                  <li>Evalúa la madurez de tu operación de marketing</li>
+                  <li>Analiza canales, campañas y procesos</li>
+                  <li>Identifica fugas en el embudo de conversión</li>
+                  <li>Detecta oportunidades de optimización</li>
+                  <li>Genera un plan de acción priorizado</li>
+                  <li>Produce un reporte ejecutivo listo para compartir</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">El primer paso para la resurrección es admitir que algo murió.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-2">
+          <span class="sacr__num">02</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12l-4-4M22 12l-4 4M22 12H8"/><path d="M14 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 02 · Leads</span>
+            <span class="sacr__name">El Libro de los Vivos</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-2">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Porque ningún lead merece desaparecer sin dejar rastro.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Los leads no suelen perderse por falta de interés. Se pierden porque viven en demasiados lugares al mismo tiempo: Instagram, WhatsApp, formularios, LinkedIn, CRM, correos. Todo genera información. Pocas empresas logran conectarla.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Centraliza cada contacto, cada interacción y cada señal de intención para construir una trazabilidad completa del recorrido de cada prospecto. La IA identifica quién está listo para comprar, quién necesita seguimiento y quién aún necesita más tiempo. Tu equipo deja de perseguir contactos y empieza a priorizar oportunidades.</p>
+                <ul class="sacr__does">
+                  <li>Captura leads desde múltiples canales</li>
+                  <li>Consolida la información en un solo lugar</li>
+                  <li>Asigna puntuaciones automáticas de intención</li>
+                  <li>Automatiza procesos de nutrición</li>
+                  <li>Detecta oportunidades de venta</li>
+                  <li>Envía alertas de leads calientes</li>
+                  <li>Integra la información con tu CRM</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Que la trazabilidad sea contigo.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-3">
+          <span class="sacr__num">03</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 03 · Contenido</span>
+            <span class="sacr__name">El Evangelio</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-3">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Tu mensaje. Tu voz. Sin depender de la inspiración del lunes.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>La mayoría de las marcas no tiene un problema de creatividad. Tiene un problema de consistencia. Publican cuando tienen tiempo, desaparecen cuando están ocupadas, y luego se preguntan por qué nadie las recuerda.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Aprende la voz, el tono y la estrategia de tu marca para generar contenido alineado con tus objetivos comerciales. No produce contenido genérico: produce contenido que suena a tu empresa. Y además lo distribuye, mide y optimiza para que cada publicación contribuya al crecimiento.</p>
+                <ul class="sacr__does">
+                  <li>Genera contenido alineado con la voz de la marca</li>
+                  <li>Construye calendarios editoriales automatizados</li>
+                  <li>Programa publicaciones multicanal</li>
+                  <li>Optimiza mensajes mediante IA</li>
+                  <li>Personaliza contenido por audiencia</li>
+                  <li>Analiza el rendimiento de cada pieza</li>
+                  <li>Aprende y mejora continuamente</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">El algoritmo no castiga la falta de talento. Castiga la inconsistencia.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-4">
+          <span class="sacr__num">04</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.33L3 21l1.17-3.5A8.38 8.38 0 1 1 21 11.5Z"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 04 · Conversación</span>
+            <span class="sacr__name">El Oráculo</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-4">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Tu equipo duerme. Tus leads no esperan.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Cada minuto sin respuesta es una oportunidad para que alguien más responda primero. Y mientras tu equipo descansa, el prospecto sigue buscando — normalmente, a quien conteste antes.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Automatiza conversaciones en WhatsApp, chat y otros canales para responder, calificar y acompañar prospectos en tiempo real. Entiende el contexto, reconoce intención de compra y sabe cuándo involucrar a una persona. No reemplaza a tu equipo: lo prepara para tener mejores conversaciones.</p>
+                <ul class="sacr__does">
+                  <li>Responde automáticamente 24/7</li>
+                  <li>Califica prospectos en tiempo real</li>
+                  <li>Detecta intención de compra</li>
+                  <li>Automatiza conversaciones en WhatsApp</li>
+                  <li>Conserva el contexto entre interacciones</li>
+                  <li>Escala a humanos cuando corresponde</li>
+                  <li>Identifica oportunidades de upsell y cross-sell</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Que el pipeline te acompañe. A toda hora.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-5">
+          <span class="sacr__num">05</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="13" y="7" width="3" height="10"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 05 · Analytics</span>
+            <span class="sacr__name">La Revelación</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-5">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Los datos siempre supieron la verdad. El problema era que nadie los escuchaba.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>La información existe, pero suele estar distribuida entre plataformas, reportes y herramientas que nunca hablan entre sí. Cuando los datos viven separados, las decisiones terminan dependiendo de la intuición.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Unifica toda la información relevante del negocio en un solo lugar y la transforma en decisiones accionables. Sin perseguir reportes. Sin esperar al cierre del mes. Sin actuar demasiado tarde.</p>
+                <ul class="sacr__does">
+                  <li>Consolida datos de todos los canales</li>
+                  <li>Construye dashboards en tiempo real</li>
+                  <li>Calcula atribución multicanal</li>
+                  <li>Detecta anomalías automáticamente</li>
+                  <li>Proyecta resultados futuros mediante IA</li>
+                  <li>Genera reportes ejecutivos automáticos</li>
+                  <li>Mide ROI por canal, campaña y periodo</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Paz para los dashboards. Gloria para las conversiones.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="sacr">
+        <button class="sacr__head" aria-expanded="false" aria-controls="sacr-6">
+          <span class="sacr__num">06</span>
+          <span class="sacr__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+          <span class="sacr__titles">
+            <span class="sacr__cat">Sacramento 06 · Inteligencia</span>
+            <span class="sacr__name">La Omnisciencia</span>
+          </span>
+          <span class="sacr__toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="sacr__panel" id="sacr-6">
+          <div class="sacr__panel-inner">
+            <p class="sacr__tag">“Porque el mercado no espera a que revises la competencia.”</p>
+            <div class="sacr__cols">
+              <div class="sacr__block sacr__block--problem">
+                <h4>El problema</h4>
+                <p>Tus competidores cambian mensajes, lanzan campañas, ajustan precios y prueban nuevas estrategias. Y la mayoría de las empresas se entera cuando ya es demasiado tarde.</p>
+              </div>
+              <div class="sacr__block sacr__block--solution">
+                <h4>La intervención</h4>
+                <p>Monitorea continuamente el mercado para identificar movimientos relevantes y oportunidades que podrían afectar tu crecimiento. No para copiar. Para decidir mejor.</p>
+                <ul class="sacr__does">
+                  <li>Monitorea competidores automáticamente</li>
+                  <li>Analiza campañas y posicionamiento</li>
+                  <li>Detecta cambios relevantes del mercado</li>
+                  <li>Genera alertas estratégicas</li>
+                  <li>Identifica oportunidades emergentes</li>
+                  <li>Produce reportes periódicos automatizados</li>
+                  <li>Realiza benchmarking de industria</li>
+                </ul>
+              </div>
+            </div>
+            <p class="sacr__phrase">Algunos lo llaman ventaja competitiva. Nosotros lo llamamos Omnisciencia.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="sacr-cta reveal">
+      <h3>¿Necesitas los seis sacramentos?</h3>
+      <p>Probablemente no. La intervención comienza donde está el problema. Y crece a medida que crece tu negocio.</p>
+      <a class="btn btn--neon" data-wa="diagnostico">Solicita tu diagnóstico →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html#top" class="logo">
+          <svg class="halo-spin" width="32" height="32" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <g class="halo-rays" stroke="#D9F103" stroke-width="0.85" stroke-linecap="round">
+              <line x1="24.0" y1="9.5" x2="24.0" y2="1.5"/><line x1="26.5" y1="9.7" x2="27.9" y2="1.8"/><line x1="29.0" y1="10.4" x2="31.7" y2="2.9"/><line x1="31.2" y1="11.4" x2="35.2" y2="4.5"/>
+              <line x1="33.3" y1="12.9" x2="38.5" y2="6.8"/><line x1="35.1" y1="14.7" x2="41.2" y2="9.5"/><line x1="36.6" y1="16.8" x2="43.5" y2="12.7"/><line x1="37.6" y1="19.0" x2="45.1" y2="16.3"/>
+              <line x1="38.3" y1="21.5" x2="46.2" y2="20.1"/><line x1="38.5" y1="24.0" x2="46.5" y2="24.0"/><line x1="38.3" y1="26.5" x2="46.2" y2="27.9"/><line x1="37.6" y1="29.0" x2="45.1" y2="31.7"/>
+              <line x1="36.6" y1="31.2" x2="43.5" y2="35.2"/><line x1="35.1" y1="33.3" x2="41.2" y2="38.5"/><line x1="33.3" y1="35.1" x2="38.5" y2="41.2"/><line x1="31.2" y1="36.6" x2="35.2" y2="43.5"/>
+              <line x1="29.0" y1="37.6" x2="31.7" y2="45.1"/><line x1="26.5" y1="38.3" x2="27.9" y2="46.2"/><line x1="24.0" y1="38.5" x2="24.0" y2="46.5"/><line x1="21.5" y1="38.3" x2="20.1" y2="46.2"/>
+              <line x1="19.0" y1="37.6" x2="16.3" y2="45.1"/><line x1="16.8" y1="36.6" x2="12.7" y2="43.5"/><line x1="14.7" y1="35.1" x2="9.5" y2="41.2"/><line x1="12.9" y1="33.3" x2="6.8" y2="38.5"/>
+              <line x1="11.4" y1="31.3" x2="4.5" y2="35.3"/><line x1="10.4" y1="29.0" x2="2.9" y2="31.7"/><line x1="9.7" y1="26.5" x2="1.8" y2="27.9"/><line x1="9.5" y1="24.0" x2="1.5" y2="24.0"/>
+              <line x1="9.7" y1="21.5" x2="1.8" y2="20.1"/><line x1="10.4" y1="19.0" x2="2.9" y2="16.3"/><line x1="11.4" y1="16.8" x2="4.5" y2="12.7"/><line x1="12.9" y1="14.7" x2="6.8" y2="9.5"/>
+              <line x1="14.7" y1="12.9" x2="9.5" y2="6.8"/><line x1="16.7" y1="11.4" x2="12.7" y2="4.5"/><line x1="19.0" y1="10.4" x2="16.3" y2="2.9"/><line x1="21.5" y1="9.7" x2="20.1" y2="1.8"/>
+            </g>
+            <circle cx="24" cy="24" r="10.5" fill="none" stroke="#D9F103" stroke-width="2.5"/>
+          </svg>
+          <span>Padre Santo</span>
+        </a>
+        <p>La intervención DivinAI que tu marketing necesitaba. Sistema modular con IA para equipos B2B en LATAM.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Producto</h4>
+        <a href="index.html#solucion">Solución</a><a href="modulos.html">Módulos</a><a href="index.html#paraquien">Para quién</a><a href="index.html#planes">Planes</a><a href="nosotros.html">Quiénes somos</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a data-mail>info@aipadresanto.com</a>
+        <a data-wa="footer">WhatsApp +57 323 340 3286</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="copy">Padre Santo · Intervención DivinAI™ · 2026</span>
+      <span class="blessing">Paz para los dashboards. Gloria para las conversiones.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
