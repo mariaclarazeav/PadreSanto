@@ -299,6 +299,10 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .sec-head--center { max-width: 760px; margin-inline: auto; text-align: center; }
 .sec-head--center .kicker { margin-bottom: 18px; }
 .sacr-intro-phrase { font-family: var(--font-mono); color: var(--neon); font-size: clamp(15px,2.2vw,19px); margin-top: 24px; letter-spacing: 0.02em; }
+/* legibilidad del encabezado sobre la imagen de fondo */
+.sacramentos .sec-head--center h2,
+.sacramentos .sec-head--center .kicker,
+.sacramentos .sec-head--center p { text-shadow: 0 2px 22px rgba(8,8,54,0.75); }
 
 /* cuadros: navegador horizontal hacia el acordeón */
 .sacr-cards { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; max-width: 1000px; margin: clamp(38px,5vw,56px) auto 0; position: relative; z-index: 1; }
@@ -371,13 +375,19 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .sacr-cta h3 { font-size: clamp(24px,3.4vw,34px); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 14px; }
 .sacr-cta p { color: var(--lilac); font-size: clamp(16px,2vw,18px); margin-bottom: 28px; }
 
-/* fondo grande: imagen del Dios detrás de toda la sección */
-.sacr-bg { position: absolute; inset: 0; z-index: 0; background: url('assets/padre-santo.png') no-repeat right center; background-size: cover; }
-.sacr-bg::after {
-  content: ""; position: absolute; inset: 0;
-  background:
-    linear-gradient(90deg, rgba(8,8,54,0.72) 0%, rgba(8,8,54,0.42) 45%, rgba(8,8,54,0.18) 100%),
-    linear-gradient(180deg, var(--navy-deep) 0%, transparent 15%, transparent 82%, var(--navy-deep) 100%);
+/* fondo: imagen completa a 2.5:1 (Dios a la derecha), nebulosa en el resto */
+.sacramentos { background: var(--navy-deep); }
+.sacr-bg-img, .sacr-bg-veil {
+  position: absolute; top: 0; right: 0; width: 100%; z-index: 0; pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, #000 56%, transparent 96%);
+          mask-image: linear-gradient(180deg, #000 56%, transparent 96%);
+}
+/* la imagen conserva su proporción natural 2.5:1 */
+.sacr-bg-img { height: auto; display: block; }
+/* velo: oscurece la izquierda para legibilidad, deja ver al Dios a la derecha */
+.sacr-bg-veil {
+  aspect-ratio: 1983 / 793;
+  background: linear-gradient(90deg, rgba(8,8,54,0.55) 0%, rgba(8,8,54,0.12) 52%, transparent 100%);
 }
 
 /* banner grande con la imagen del Dios + título superpuesto */
@@ -605,8 +615,8 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
   .pq-grid { grid-template-columns: 1fr; }
   .sacr__cols { grid-template-columns: 1fr; }
   .sacr-deity { display: none; }
-  .sacr-bg { background-position: center top; background-size: 180% auto; }
-  .sacr-bg::after { background: linear-gradient(180deg, rgba(8,8,54,0.55) 0%, rgba(8,8,54,0.86) 40%, var(--navy-deep) 80%); }
+  /* en móvil ampliamos para que el Dios se vea más grande a la derecha */
+  .sacr-bg-img, .sacr-bg-veil { width: 215%; }
   /* cuadros en carrusel horizontal */
   .sacr-cards { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; -webkit-overflow-scrolling: touch; }
   .sacr-card { flex: 0 0 clamp(150px, 46%, 220px); scroll-snap-align: start; }
