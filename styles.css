@@ -689,12 +689,16 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .desert { left: 0; right: 0; bottom: 0; width: 100%; line-height: 0; z-index: 0; }
 .desert svg { width: 100%; height: auto; display: block; }
 
-/* sol del desierto: halo de la marca + resplandor cálido en el horizonte */
+/* sol del desierto: halo de la marca en el cielo (arriba a la derecha) */
 .desert-sun-glow {
-  left: 50%; bottom: -40px; transform: translateX(-50%);
-  width: min(720px, 94vw); aspect-ratio: 1; border-radius: 50%;
-  background: radial-gradient(circle, rgba(217,241,3,0.32), rgba(255,153,220,0.16) 42%, transparent 70%);
-  filter: blur(8px);
+  top: -14%; right: -8%;
+  width: min(620px, 78vw); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle, rgba(217,241,3,0.38), rgba(255,153,220,0.20) 44%, transparent 72%);
+  filter: blur(6px);
 }
-.desert-sun { left: 50%; bottom: 26px; transform: translateX(-50%); width: min(380px, 56vw); aspect-ratio: 1; }
-.desert-sun .halo-bg { inset: 0; width: auto; color: var(--neon); opacity: 0.62; --spin: 120s; }
+.desert-sun { top: 5%; right: 4%; width: min(320px, 44vw); aspect-ratio: 1; }
+.desert-sun .halo-bg { inset: 0; width: auto; color: var(--neon); opacity: 0.9; --spin: 120s; }
+@media (max-width: 700px) {
+  .desert-sun { top: 2%; right: -6%; width: 200px; }
+  .desert-sun-glow { top: -8%; right: -16%; width: 360px; }
+}
