@@ -263,7 +263,7 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 /* =================================================================
    PROBLEMA
    ================================================================= */
-.problema { background: linear-gradient(180deg, #F4F2FB 0%, #EFE9FB 40%, #E7DCF7 70%, #DDCDF2 100%); color: var(--navy); }
+.problema { background: linear-gradient(180deg, #F4F2FB 0%, #EFE9FB 40%, #E7DCF7 70%, #DDCDF2 100%); color: var(--navy); padding-bottom: clamp(160px, 17vw, 260px); }
 .sec-head { max-width: 760px; margin-bottom: clamp(40px, 6vw, 70px); }
 .sec-head .kicker { display: block; margin-bottom: 18px; }
 .sec-head h2 { margin-bottom: 0; }
