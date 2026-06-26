@@ -682,3 +682,9 @@ h3, .h3 { font-size: clamp(20px, 2.2vw, 28px); font-weight: 600; letter-spacing:
 .footer__legal { display: inline-flex; gap: 18px; flex-wrap: wrap; align-items: center; }
 .footer__legal a { font-family: var(--font-mono); font-size: 12px; color: rgba(210,199,255,0.5); letter-spacing: 0.04em; transition: color 0.2s; }
 .footer__legal a:hover { color: var(--neon); }
+
+/* =================================================================
+   DESIERTO — dunas + camellos al pie de la sección del problema
+   ================================================================= */
+.desert { left: 0; right: 0; bottom: 0; width: 100%; line-height: 0; z-index: 0; }
+.desert svg { width: 100%; height: auto; display: block; }
